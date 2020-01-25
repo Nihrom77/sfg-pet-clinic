@@ -1,4 +1,7 @@
 package com.springframework.cfgpetclinic.services;
 
-public interface PetService {
+
+import com.springframework.cfgpetclinic.model.Pet;
+
+public interface PetService extends CRUDService<Pet, Long> {
 }

@@ -1,13 +1,9 @@
 package com.springframework.cfgpetclinic.services;
 
-import com.springframework.cfgpetclinic.model.Owner;
+import com.springframework.cfgpetclinic.model.Vet;
 
-import java.util.Set;
+public interface VetService extends CRUDService<Vet, Long> {
 
-public interface VetService {
 
-    Owner findByLastName(String lastName);
-    Owner findById(Long id);
-    Owner save(Owner owner);
-    Set<Owner> findAll();
+
 }

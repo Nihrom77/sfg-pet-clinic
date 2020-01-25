@@ -1,4 +1,7 @@
 package com.springframework.cfgpetclinic.services;
 
-public interface OwnerService {
+import com.springframework.cfgpetclinic.model.Owner;
+
+public interface OwnerService extends CRUDService<Owner, Long> {
+    Owner findByLastName(String lastName);
 }
