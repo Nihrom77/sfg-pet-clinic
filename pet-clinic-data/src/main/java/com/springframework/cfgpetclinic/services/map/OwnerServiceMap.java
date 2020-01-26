@@ -2,9 +2,11 @@ package com.springframework.cfgpetclinic.services.map;
 
 import com.springframework.cfgpetclinic.model.Owner;
 import com.springframework.cfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbsctractMapService<Owner, Long> implements OwnerService {
 
     @Override
