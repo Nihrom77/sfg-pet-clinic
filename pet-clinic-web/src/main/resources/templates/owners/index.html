@@ -5,6 +5,25 @@
     <title>Owners</title>
 </head>
 <body>
+<!-- /*@thymesVar id="owner" type="com.springframework.cfgpetclinic.model.Owner"*/ -->
 <h1 th:text="'Owners index page'">owners index page</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="owner : ${owners}">
+        <td th:text="${owner?.id}">1</td>
+        <!-- owner?.id тут "?" означает null-safe. Что с ним, что без него null отображается как пустая строка -->
+        <td th:text="${owner.firstName}">Joe</td>
+        <td th:text="${owner.lastName}">Doe</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
