@@ -13,4 +13,9 @@ public class IndexController {
         model.addAttribute("welcome", "Welcome");
         return "index";
     }
+
+    @RequestMapping("/oups")
+    public String getError() {
+        return "notImplemented";
+    }
 }
