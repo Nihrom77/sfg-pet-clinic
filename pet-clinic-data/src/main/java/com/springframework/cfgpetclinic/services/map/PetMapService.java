@@ -34,4 +34,5 @@ public class PetMapService extends AbsctractMapService<Pet, Long> implements Pet
     public Pet findById(Long id) {
         return super.findById(id);
     }
+
 }
